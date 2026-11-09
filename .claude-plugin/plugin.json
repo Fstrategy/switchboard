@@ -1,0 +1,60 @@
+{
+  "name": "switchboard",
+  "version": "0.1.0",
+  "description": "A board beside the chat for people who run many Claude Code sessions at once: which ones are waiting on you, what each needs, coordinators grouped with the sessions they started, and one click to jump there.",
+  "author": {
+    "name": "Lumir"
+  },
+  "homepage": "https://github.com/Fstrategy/switchboard",
+  "repository": "https://github.com/Fstrategy/switchboard",
+  "license": "MIT",
+  "keywords": [
+    "sessions",
+    "dashboard",
+    "pane",
+    "multitasking",
+    "desktop"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "The board's language, and the language its short lines are written in. auto follows your system locale.",
+      "default": "auto",
+      "options": [
+        "auto",
+        "en",
+        "zh"
+      ]
+    },
+    "summaries": {
+      "type": "boolean",
+      "title": "Short lines by a small model",
+      "description": "Have Claude Haiku turn each session's latest state into a few short lines (what it is doing, what it needs from you). Uses your own Claude usage; each session's content is written up once and shared by all your sessions. Off: the board shows the records' own words, cut short, and terminal sessions show up as waiting only when they ask you a question.",
+      "default": true
+    },
+    "openPane": {
+      "type": "string",
+      "title": "Open the board",
+      "description": "auto opens the board beside the chat when a session starts (when the window is wide enough); command opens it only from the Board button above the prompt or /switchboard.",
+      "default": "auto",
+      "options": [
+        "auto",
+        "command"
+      ]
+    },
+    "footerCommand": {
+      "type": "string",
+      "title": "Footer button: command",
+      "description": "A slash command (without the slash) for a button at the bottom of the board, such as a cleanup command of your own. Empty: no button.",
+      "default": ""
+    },
+    "footerLabel": {
+      "type": "string",
+      "title": "Footer button: label",
+      "description": "The footer button's label. Empty: the command's name.",
+      "default": ""
+    }
+  }
+}

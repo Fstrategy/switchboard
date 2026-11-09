@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "switchboard",
+  "description": "Switchboard: see which of your Claude Code sessions are waiting on you.",
+  "owner": {
+    "name": "Lumir"
+  },
+  "plugins": [
+    {
+      "name": "switchboard",
+      "source": "./",
+      "description": "A board beside the chat: which of your Claude Code sessions are waiting on you, what each needs, and one click to jump there."
+    }
+  ]
+}
