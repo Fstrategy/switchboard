@@ -20,7 +20,7 @@ At the prompt of a Claude Code session:
 /plugin install switchboard --marketplace Fstrategy/switchboard
 ```
 
-Answer `y` to add the marketplace, then choose a scope (the user scope puts it in every session). The board opens beside the chat when a session starts; `/switchboard` or the **Board** button above the prompt opens it any time.
+Answer `y` to add the marketplace, choose a scope (the user scope puts it in every session), and keep the default settings or change them; `/config` changes them later. The board opens beside the chat when a session starts; `/switchboard` or the **Board** button above the prompt opens it any time.
 
 Needs Python 3 on your PATH (as `python3`, `python` or `py`). Tested with Claude Code 2.1.319 on macOS.
 

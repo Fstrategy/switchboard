@@ -20,7 +20,7 @@
 /plugin install switchboard --marketplace Fstrategy/switchboard
 ```
 
-按 `y` 添加来源，再选范围（选用户范围就是每个会话都有）。会话开始时看板自动在旁边打开；随时可以输入 `/switchboard` 或点输入框上方的「看板」打开。
+按 `y` 添加来源，再选范围（选用户范围就是每个会话都有），设置页直接用默认值就行，以后在 `/config` 里也能改。会话开始时看板自动在旁边打开；随时可以输入 `/switchboard` 或点输入框上方的「看板」打开。
 
 需要电脑上有 Python 3（`python3`、`python` 或 `py` 任一）。在 macOS 上用 Claude Code 2.1.319 测过。
 
